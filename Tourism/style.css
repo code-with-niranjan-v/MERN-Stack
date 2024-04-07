@@ -1,0 +1,27 @@
+.btn-card-container{
+    padding: 20px;
+    background-color: white;
+    height: 200px;
+    text-align: center;
+}
+
+.btn-get-started{
+    color: white;
+    background-color: deepskyblue;
+    border-radius: 12px;
+    font-size: 24px;
+    border: none;
+    padding: 12px;
+    
+}
+
+
+.text-plan-your-trip{
+    color: black;
+    font-size: 20px;
+}
+
+.bg{
+    height: 1000px;
+    background-image: url("https://pixelz.cc/wp-content/uploads/2019/02/ocean-sand-beach-uhd-4k-wallpaper.jpg");
+}

@@ -1,0 +1,18 @@
+.heading1{
+    color: rebeccapurple;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.paragraph{
+    color: brown;
+    font-family: "Mountains of Christmas", serif;
+    font-size: 30px;
+}
+
+.btnNextPage{
+    color: wheat;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    border: none;
+}
