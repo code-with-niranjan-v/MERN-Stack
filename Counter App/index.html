@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="h-screen flex flex-col  items-center justify-center gap-10">
+        <p id="counter" class="text-slate-900 text-3xl ">
+            0
+        </p>
+    
+        <div class="w-100 space-x-4">
+            <button id="start" class="bg-black  hover:bg-slate-50 hover:text-slate-900 hover:border-slate-950 hover:border-2 text-slate-50 w-32 rounded-md text-2xl  p-5">Start</button>
+            <button id="stop" class="bg-black  hover:bg-slate-50 hover:text-slate-900 hover:border-slate-950 hover:border-2 text-slate-50 w-32 rounded-md text-2xl  p-5" >Stop</button>
+            <button id="reset" class=" bg-black  hover:bg-slate-50 hover:text-slate-900 hover:border-slate-950 hover:border-2 text-slate-50 w-32 rounded-md text-2xl  p-5">Reset</button>
+        </div>
+    
+        
+    </div>
+    <script>
+        const add = document.getElementById("start")
+        const sub = document.getElementById("stop")
+        const reset = document.getElementById("reset")
+        const counter = document.getElementById("counter")
+        let time = 0
+        let id
+        function timer(){
+            time++
+            counter.textContent = time 
+        }
+        add.addEventListener("click",()=>
+        {   
+            id = setInterval(timer,1000)
+               
+        }
+    )
+        sub.addEventListener("click",()=>
+        {
+            clearInterval(id)      
+        }
+    )
+        reset.addEventListener("click",()=>
+        {
+            counter.textContent = 0       
+        }
+    )
+    </script>
+</body>
+</html>
